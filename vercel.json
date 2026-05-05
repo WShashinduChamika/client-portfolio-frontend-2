@@ -21,7 +21,7 @@
   ],
   "headers": [
     {
-      "source": "/:path*",
+      "source": "/(.*)",
       "headers": [
         {
           "key": "X-Frame-Options",
@@ -45,19 +45,6 @@
           "value": "text/plain; charset=utf-8"
         }
       ]
-    }
-  ],
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "www.minuri.me"
-        }
-      ],
-      "destination": "https://minuri.me/:path*",
-      "permanent": true
     }
   ]
 }
