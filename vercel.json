@@ -49,7 +49,13 @@
   ],
   "redirects": [
     {
-      "source": "https://www.minuri.me/(.*)",
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.minuri.me"
+        }
+      ],
       "destination": "https://minuri.me/$1",
       "permanent": true
     }
